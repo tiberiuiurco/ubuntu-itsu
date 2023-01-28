@@ -41,6 +41,7 @@ nala install gdm3 -y # GDM3 Display Manager
 cp dwm.desktop /usr/share/xsessions/dwm.desktop
 git clone https://github.com/tiberiuiurco/dwm.git
 cd dwm || exit
+git checkout 11_Same_Tags_Monitors
 make install
 cd "$builddir" || exit
 git clone https://github.com/tiberiuiurco/dwmblocks.git
