@@ -29,10 +29,11 @@ mkdir -p /usr/share/sddm/themes
 chown -R "$username:$username" "/home/$username"
 
 # Installing Essential Programs
-nala install snapd rofi nitrogen flameshot volumeicon-alsa pavucontrol
+nala install snapd rofi nitrogen flameshot volumeicon-alsa pavucontrol -y
 
 # Installing Snap Programs
-# snap install nvim --classic
+snap install nvim --classic
+snap install alacritty --classic
 
 # Installing DWM
 nala install build-essential libx11-dev libxinerama-dev sharutils libxft-dev -y # DWM build dependencies
